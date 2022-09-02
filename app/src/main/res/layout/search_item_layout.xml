@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="16dp"
+    android:elevation="10dp"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/SearchImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/sample_img"
+        android:layout_alignParentEnd="true"
+        android:scaleType="centerCrop"/>
+
+
+    <TextView
+        android:id="@+id/SearchTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="3sp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/cabin_bold"
+        android:textColor="@color/ChipThreed"
+        android:textSize="12sp"
+        android:layout_toLeftOf="@id/SearchImage"
+        android:layout_marginStart="5dp"
+        android:text="POLITICS"/>
+
+        <TextView
+            android:id="@+id/Search_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:textColor="@color/unselectedcolor"
+            android:fontFamily="@font/cabin"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="3sp"
+            android:layout_marginStart="5dp"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@id/SearchImage"
+            android:layout_below="@id/SearchTitleText"
+            android:textSize="14sp"
+            android:text="America's presidet joe biden arrives today at parliment in the helicpter"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/SearchImage"
+            android:layout_below="@id/Search_desc"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:id="@+id/Date_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:textColor="@color/today"
+                android:fontFamily="@font/cabin"
+                android:text="2 Sep 2021"
+                />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

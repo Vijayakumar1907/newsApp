@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Categories_Fragment">
+
+
+    <TextView
+        android:id="@+id/Categories_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/cabin_medium"
+        android:text="Categories"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Categories_text"
+        android:layout_marginTop="50dp"
+        android:rowCount="5"
+        android:columnCount="2"
+
+        android:layout_centerHorizontal="true"
+        >
+
+        <Button
+            android:id="@+id/Recent"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Recent"
+            android:textColor="@color/unselectedcolor"
+           android:layout_margin="10dp"
+            android:textAllCaps="false"
+            android:elevation="10dp"
+            android:background="@drawable/category_button_back"
+            android:theme="@style/ButtonCustom"
+            android:fontFamily="@font/cabin_medium"/>
+        <Button
+            android:id="@+id/TopNews"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Top News"
+            android:background="@drawable/category_button_back"
+            android:theme="@style/ButtonCustom"
+            android:textColor="@color/unselectedcolor"
+            android:textAllCaps="false"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/cabin_medium"/>
+        <Button
+            android:id="@+id/Recommended"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Recommended"
+            android:background="@drawable/category_button_back"
+            android:theme="@style/ButtonCustom"
+            android:textColor="@color/unselectedcolor"
+            android:layout_margin="10dp"
+            android:textAllCaps="false"
+
+            android:fontFamily="@font/cabin_medium"
+            />
+        <Button
+            android:id="@+id/Politics"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+
+            android:text="Politics"
+            android:layout_margin="10dp"
+            android:background="@drawable/category_button_back"
+            android:theme="@style/ButtonCustom"
+            android:textColor="@color/unselectedcolor"
+            android:textAllCaps="false"
+            android:fontFamily="@font/cabin_medium"/>
+        <Button
+            android:id="@+id/Education"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Education"
+            android:background="@drawable/category_button_back"
+            android:theme="@style/ButtonCustom"
+            android:textColor="@color/unselectedcolor"
+            android:layout_margin="10dp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/cabin_medium"/>
+        <Button
+            android:id="@+id/Environment"
+            android:text="Environment"
+            android:textAllCaps="false"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/cabin_medium"
+            android:background="@drawable/category_button_back"
+            android:theme="@style/ButtonCustom"
+            android:textColor="@color/unselectedcolor"
+            android:layout_width="150dp"
+            android:layout_height="50dp" />
+        <Button
+            android:id="@+id/Corona"
+            android:textAllCaps="false"
+            android:text="Corona"
+            android:fontFamily="@font/cabin_bold"
+            android:layout_margin="10dp"
+            android:layout_width="150dp"
+            android:background="@drawable/category_button_back"
+            android:theme="@style/ButtonCustom"
+            android:textColor="@color/unselectedcolor"
+
+            android:layout_height="50dp" />
+        <Button
+            android:id="@+id/Cinema"
+            android:text="Cinema"
+            android:fontFamily="@font/cabin_medium"
+            android:textAllCaps="false"
+            android:layout_margin="10dp"
+            android:layout_width="150dp"
+            android:background="@drawable/category_button_back"
+            android:theme="@style/ButtonCustom"
+            android:textColor="@color/unselectedcolor"
+            android:layout_height="50dp" />
+        <Button
+            android:id="@+id/Farming"
+            android:fontFamily="@font/cabin_medium"
+            android:textAllCaps="false"
+            android:text="Farming"
+            android:background="@drawable/category_button_back"
+            android:theme="@style/ButtonCustom"
+            android:textColor="@color/unselectedcolor"
+            android:layout_width="150dp"
+            android:layout_margin="10dp"
+            android:layout_height="50dp" />
+        <Button
+            android:id="@+id/Industries"
+            android:text="Industries"
+            android:textAllCaps="false"
+            android:layout_margin="10dp"
+            android:background="@drawable/category_button_back"
+            android:theme="@style/ButtonCustom"
+            android:textColor="@color/unselectedcolor"
+            android:fontFamily="@font/cabin_medium"
+            android:layout_width="150dp"
+            android:layout_height="50dp" />
+
+
+    </GridLayout>
+
+</RelativeLayout>

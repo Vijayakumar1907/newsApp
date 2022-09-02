@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/Top_layoutProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16sp">
+            <ImageView
+                android:id="@+id/back_Profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back"/>
+            <ImageView
+                android:id="@+id/Settings_Profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_settings_icon"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+
+            android:id="@+id/Circular_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/Top_layoutProfile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="180dp"
+            android:src="@drawable/sample_img"
+            android:scaleType="centerCrop">
+
+        </com.blogspot.atifsoftwares.circularimageview.CircularImageView>
+
+        <TextView
+            android:id="@+id/mailId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Circular_image"
+            android:layout_centerHorizontal="true"
+            android:text="vijaykumaar1907@gmail.com"
+            android:fontFamily="@font/cabin_medium"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/Logut_button"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/mailId"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="200dp"
+            android:text="Logout"
+            android:textAllCaps="false"
+            android:fontFamily="@font/cabin_bold"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:theme="@style/buttonTheme"
+            />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

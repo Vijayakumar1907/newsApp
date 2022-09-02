@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/bottom_navDiscover"
+        android:title="Discover"
+        android:icon="@drawable/ic_location_searching"
+        app:cnb_backgroundColor="@color/ChipOne">
+
+    </item>
+
+    <item
+        android:id="@+id/bottom_navCategories"
+        android:title="Categories"
+        android:icon="@drawable/ic_category"
+        app:cnb_backgroundColor="@color/ChipTwo">
+
+    </item>
+
+    <item
+        android:id="@+id/bottom_navSearch"
+        android:title="Search"
+        android:icon="@drawable/ic_search"
+        app:cnb_backgroundColor="@color/ChipThree">
+
+    </item>
+
+    <item
+        android:id="@+id/bottom_navSave"
+        android:title="Save"
+        android:icon="@drawable/ic_bookmark_border"
+        app:cnb_backgroundColor="@color/ChipFour">
+
+    </item>
+
+</menu>

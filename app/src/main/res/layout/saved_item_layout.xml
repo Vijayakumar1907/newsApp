@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="8dp"
+    android:elevation="8dp"
+    android:layout_margin="10dp"
+    >
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/Saved_Image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/sample_img"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/Saved_titleTexts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Saved_Image"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/unselectedcolor"
+            android:text="PM Modi Gives speech today at Himachal Pradesh regarding to the education"
+            android:padding="4dp"
+            />
+
+        <TextView
+            android:id="@+id/CrickDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Saved_titleTexts"
+            android:layout_marginTop="8sp"
+            android:layout_marginStart="5dp"
+            android:text="02/07/2021"
+            />
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
